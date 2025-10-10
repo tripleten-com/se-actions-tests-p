@@ -1,7 +1,7 @@
 #!/bin/bash
-
+set -euo pipefail
 source ./bin/pre-run.sh
 
-npm ci --no-fund --no-audit --loglevel=error
+npm ci --no-fund --no-audit --log-level=error --no-progress
 node ./dist/pre-endpoint-tests.js ../
 check $?

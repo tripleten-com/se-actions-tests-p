@@ -1,12 +1,10 @@
 #!/bin/bash
 
-set -e
-
-function print_red() {
+function print_red(){
 	echo -e "\e[31m$@\e[0m"
 }
 
-function check() {
+function check(){
 	if [[ $1 != 0 ]]
 		then
 		print_red "FAILED"
