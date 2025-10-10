@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 function print_red() {
 	echo -e "\e[31m$@\e[0m"
 }
