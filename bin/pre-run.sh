@@ -7,7 +7,7 @@ function print_red(){
 function check(){
 	if [[ $1 != 0 ]]
 		then
-		print_red "FAILED"
+		print_red "PROJECT SUBMISSION FAILED"
 		exit 1
 	fi
 }

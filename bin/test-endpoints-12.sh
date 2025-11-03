@@ -1,5 +1,4 @@
 #!/bin/bash
-set -euo pipefail
 source ./bin/pre-run.sh
 
 npm install -g newman --no-fund --no-audit --loglevel=error
